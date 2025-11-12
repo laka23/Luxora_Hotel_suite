@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Harborlights - Luxury Hotel Experience</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="democs.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+ 
+ <!-- Header -->
+    <header class="header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">Harbor<span>lights</span></a>
+            <button class="nav-toggle" id="navToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav class="nav" id="nav">
+                <ul class="nav-menu" id="navMenu">
+                    <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+                    <li class="nav-item"><a href="#rooms" class="nav-link">Rooms</a></li>
+                    <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link nav-btn">Book Now</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+<section class="section dashboard" id="dashboard">
+    <div class="container">
+        <div class="dashboard-header">
+            <h2>Welcome Back, <span id="userName">John Doe</span></h2>
+            <p>Manage your bookings, profile, and notifications</p>
+        </div>
+
+        <div class="dashboard-grid">
+            <!-- Left Sidebar Navigation -->
+            <div class="dashboard-sidebar">
+                <ul class="dashboard-menu">
+                    <li class="active"><a href="#bookings"><i class="fas fa-calendar-alt"></i> My Bookings</a></li>
+                    <li><a href="#profile"><i class="fas fa-user-cog"></i> Profile Settings</a></li>
+                    <li><a href="#notifications"><i class="fas fa-bell"></i> Notifications</a></li>
+                    <li><a href="#messages"><i class="fas fa-envelope"></i> Messages</a></li>
+                    <li><a href="#logout"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+                </ul>
+            </div>
+
+            <!-- Main Content Area -->
+            <div class="dashboard-content">
+                <!-- Bookings Tab -->
+                <div class="dashboard-tab active" id="bookings-tab">
+                    <div class="tab-header">
+                        <h3><i class="fas fa-calendar-alt"></i> Your Bookings</h3>
+                        <button class="btn btn-secondary">New Booking</button>
+                    </div>
+
+                    <div class="bookings-list">
+                        <!-- Upcoming Bookings -->
+                        <div class="booking-category">
+                            <h4>Upcoming Stays</h4>
+                            <div class="booking-card">
+                                <div class="booking-img">
+                                    <img src="https://images.unsplash.com/photo-1566669437685-2c5a585aded0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" alt="Executive Suite">
+                                </div>
+                                <div class="booking-info">
+                                    <h5>Executive Suite</h5>
+                                    <div class="booking-dates">
+                                        <span><i class="fas fa-calendar-day"></i> 15 Oct 2023 - 18 Oct 2023</span>
+                                        <span><i class="fas fa-moon"></i> 3 nights</span>
+                                    </div>
+                                    <div class="booking-status confirmed">
+                                        <i class="fas fa-check-circle"></i> Confirmed
+                                    </div>
+                                    <div class="booking-price">
+                                        $897.00 <span>total</span>
+                                    </div>
+                                </div>
+                                <div class="booking-actions">
+                                    <button class="btn btn-secondary">Modify</button>
+                                    <button class="btn btn-cancel">Cancel</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Past Bookings -->
+                        <div class="booking-category">
+                            <h4>Past Stays</h4>
+                            <div class="booking-card">
+                                <div class="booking-img">
+                                    <img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Deluxe Room">
+                                </div>
+                                <div class="booking-info">
+                                    <h5>Deluxe Harbor View</h5>
+                                    <div class="booking-dates">
+                                        <span><i class="fas fa-calendar-day"></i> 22 Aug 2023 - 25 Aug 2023</span>
+                                        <span><i class="fas fa-moon"></i> 3 nights</span>
+                                    </div>
+                                    <div class="booking-status completed">
+                                        <i class="fas fa-clock"></i> Completed
+                                    </div>
+                                    <div class="booking-price">
+                                        $657.00 <span>total</span>
+                                    </div>
+                                </div>
+                                <div class="booking-actions">
+                                    <button class="btn btn-secondary">Book Again</button>
+                                    <button class="btn">Leave Review</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Profile Tab (hidden by default) -->
+                <div class="dashboard-tab" id="profile-tab">
+                    <div class="tab-header">
+                        <h3><i class="fas fa-user-cog"></i> Profile Settings</h3>
+                    </div>
+
+                    <form class="profile-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">First Name</label>
+                                <input type="text" id="firstName" value="John" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Last Name</label>
+                                <input type="text" id="lastName" value="Doe" class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" value="john.doe@example.com" class="form-control">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" value="+1 (555) 123-4567" class="form-control">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="address">Address</label>
+                            <textarea id="address" class="form-control">123 Main St, Apt 4B, New York, NY 10001</textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="preferences">Special Preferences</label>
+                            <textarea id="preferences" class="form-control">Non-smoking room, King bed preferred, High floor</textarea>
+                        </div>
+
+                        <div class="form-actions">
+                            <button type="submit" class="btn">Save Changes</button>
+                            <button type="button" class="btn btn-secondary">Change Password</button>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Notifications Tab (hidden by default) -->
+                <div class="dashboard-tab" id="notifications-tab">
+                    <div class="tab-header">
+                        <h3><i class="fas fa-bell"></i> Notifications</h3>
+                        <button class="btn btn-secondary">Mark All as Read</button>
+                    </div>
+
+                    <div class="notifications-list">
+                        <div class="notification-item unread">
+                            <div class="notification-icon">
+                                <i class="fas fa-calendar-check"></i>
+                            </div>
+                            <div class="notification-content">
+                                <h5>Booking Confirmed</h5>
+                                <p>Your reservation for Executive Suite from 15-18 Oct 2023 has been confirmed.</p>
+                                <span class="notification-time">2 hours ago</span>
+                            </div>
+                            <div class="notification-actions">
+                                <button class="btn-icon"><i class="fas fa-times"></i></button>
+                            </div>
+                        </div>
+
+                        <div class="notification-item">
+                            <div class="notification-icon">
+                                <i class="fas fa-percentage"></i>
+                            </div>
+                            <div class="notification-content">
+                                <h5>Special Offer</h5>
+                                <p>Get 20% off your next stay when you book before 30 Nov 2023.</p>
+                                <span class="notification-time">1 day ago</span>
+                            </div>
+                            <div class="notification-actions">
+                                <button class="btn-icon"><i class="fas fa-times"></i></button>
+                            </div>
+                        </div>
+
+                        <div class="notification-item">
+                            <div class="notification-icon">
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="notification-content">
+                                <h5>Review Your Stay</h5>
+                                <p>How was your recent stay with us? Share your experience!</p>
+                                <span class="notification-time">3 days ago</span>
+                            </div>
+                            <div class="notification-actions">
+                                <button class="btn-icon"><i class="fas fa-times"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Messages Tab (hidden by default) -->
+                <div class="dashboard-tab" id="messages-tab">
+                    <div class="tab-header">
+                        <h3><i class="fas fa-envelope"></i> Messages</h3>
+                    </div>
+
+                    <div class="messages-container">
+                        <div class="messages-sidebar">
+                            <div class="message-preview active">
+                                <div class="message-sender">Harborlights Support</div>
+                                <div class="message-excerpt">Regarding your upcoming reservation...</div>
+                                <div class="message-time">Today, 10:30 AM</div>
+                            </div>
+                            <div class="message-preview">
+                                <div class="message-sender">Reservations Team</div>
+                                <div class="message-excerpt">Your booking confirmation #HL20394</div>
+                                <div class="message-time">Oct 5, 2:15 PM</div>
+                            </div>
+                            <div class="message-preview">
+                                <div class="message-sender">Billing Department</div>
+                                <div class="message-excerpt">Receipt for your recent stay</div>
+                                <div class="message-time">Sep 28, 9:45 AM</div>
+                            </div>
+                        </div>
+                        <div class="message-content">
+                            <div class="message-header">
+                                <h4>Regarding your upcoming reservation</h4>
+                                <div class="message-meta">
+                                    <span class="sender">Harborlights Support</span>
+                                    <span class="time">Today, 10:30 AM</span>
+                                </div>
+                            </div>
+                            <div class="message-body">
+                                <p>Dear John Doe,</p>
+                                <p>We're looking forward to welcoming you for your upcoming stay from October 15-18, 2023 in our Executive Suite.</p>
+                                <p>Please let us know if you have any special requests or requirements for your stay. Our concierge team would be happy to assist with restaurant reservations, transportation, or any other arrangements you might need.</p>
+                                <p>Warm regards,<br>The Harborlights Team</p>
+                            </div>
+                            <div class="message-reply">
+                                <textarea placeholder="Type your reply here..." class="form-control"></textarea>
+                                <button class="btn">Send Reply</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+ <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Harborlights</h3>
+                    <p>Experience luxury and comfort at our award-winning hotel. We pride ourselves on delivering exceptional service and creating memorable experiences for our guests.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Rooms & Suites</a></li>
+                        <li><a href="#">Dining</a></li>
+                        <li><a href="#">Spa & Wellness</a></li>
+                        <li><a href="#">Special Offers</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Weddings</a></li>
+                        <li><a href="#">Meetings & Events</a></li>
+                        <li><a href="#">Airport Transfer</a></li>
+                        <li><a href="#">City Tours</a></li>
+                        <li><a href="#">Private Dining</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Us</h3>
+                    <ul class="footer-contact">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>123 Harbor Drive, Coastal City, CC 12345</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone-alt"></i>
+                            <span>+1 (555) 123-4567</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <span>info@harborlights.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Harborlights Hotel. All Rights Reserved. | Designed with <i class="fas fa-heart" style="color: var(--primary);"></i></p>
+            </div>
+        </div>
+    </footer>
+<script>
+// Dashboard Tab Switching
+document.addEventListener('DOMContentLoaded', function() {
+    const menuItems = document.querySelectorAll('.dashboard-menu li a');
+    const tabs = document.querySelectorAll('.dashboard-tab');
+    
+    menuItems.forEach(item => {
+        item.addEventListener('click', function(e) {
+            e.preventDefault();
+            
+            // Remove active class from all menu items
+            menuItems.forEach(i => {
+                i.parentElement.classList.remove('active');
+            });
+            
+            // Add active class to clicked menu item
+            this.parentElement.classList.add('active');
+            
+            // Hide all tabs
+            tabs.forEach(tab => {
+                tab.classList.remove('active');
+            });
+            
+            // Show the corresponding tab
+            const tabId = this.getAttribute('href').substring(1) + '-tab';
+            document.getElementById(tabId).classList.add('active');
+        });
+    });
+    
+    // Message preview click handler
+    const messagePreviews = document.querySelectorAll('.message-preview');
+    messagePreviews.forEach(preview => {
+        preview.addEventListener('click', function() {
+            messagePreviews.forEach(p => p.classList.remove('active'));
+            this.classList.add('active');
+            // In a real app, you would load the message content via AJAX
+        });
+    });
+    
+    // Notification close button
+    const notificationCloseBtns = document.querySelectorAll('.notification-actions .btn-icon');
+    notificationCloseBtns.forEach(btn => {
+        btn.addEventListener('click', function(e) {
+            e.stopPropagation();
+            this.closest('.notification-item').remove();
+        });
+    });
+});
+</script>
+</body>
+</html>

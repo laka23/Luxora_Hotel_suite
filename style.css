@@ -1,0 +1,138 @@
+/* GENERAL LAYOUT */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #f0f4ff, #ffffff);
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    padding: 30px 20px;
+}
+
+/* HEADINGS */
+h1, h2, h3 {
+    font-weight: 600;
+    color: #1a2b5a;
+}
+
+/* BUTTONS */
+.btn {
+    border-radius: 8px;
+    font-weight: 500;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-primary {
+    background-color: #2e86de;
+    border-color: #2e86de;
+}
+
+.btn-primary:hover {
+    background-color: #1e6bb8;
+    border-color: #1e6bb8;
+}
+
+.btn-danger {
+    background-color: #ff4757;
+    border-color: #ff4757;
+}
+
+.btn-danger:hover {
+    background-color: #e84141;
+    border-color: #e84141;
+}
+
+/* TABLES */
+.table {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.table th {
+    background-color: #2e86de;
+    color: white;
+}
+
+.table td {
+    vertical-align: middle;
+}
+
+/* FORMS */
+input[type="text"], input[type="email"], input[type="date"], select, textarea {
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+input[type="submit"], .btn-submit {
+    background-color: #28a745;
+    border: none;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #218838;
+}
+
+/* ALERTS */
+.alert {
+    padding: 12px 20px;
+    margin-top: 10px;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.alert-success {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.alert-danger {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+/* NAVBAR / HEADER (if used) */
+.header {
+    background-color: #2e86de;
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* MOBILE RESPONSIVE TABLE */
+@media (max-width: 768px) {
+    .table-responsive {
+        overflow-x: auto;
+    }
+
+    table thead {
+        display: none;
+    }
+
+    table tbody td {
+        display: block;
+        text-align: right;
+        position: relative;
+        padding-left: 50%;
+    }
+
+    table tbody td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 10px;
+        top: 10px;
+        font-weight: bold;
+        color: #444;
+    }
+}

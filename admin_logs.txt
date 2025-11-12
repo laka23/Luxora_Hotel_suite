@@ -1,0 +1,64 @@
+2025-05-27 06:49:07 - Admin dashboard accessed by admin
+2025-05-27 06:49:07 - Database query: SELECT COUNT(*) AS total FROM rooms
+2025-05-27 06:49:07 - Database query: SELECT COUNT(*) AS available FROM rooms WHERE status = 'available'
+2025-05-27 06:49:07 - Admin dashboard exited
+2025-06-02 11:06:46 - Admin dashboard accessed by admin
+2025-06-02 11:06:46 - Database query: SELECT COUNT(*) AS total FROM rooms
+2025-06-02 11:06:46 - Database query: SELECT COUNT(*) AS available FROM rooms WHERE status = 'available'
+2025-06-02 11:06:46 - Admin dashboard exited
+2025-06-02 11:11:01 - Admin dashboard accessed by admin
+2025-06-02 11:11:01 - Database query: SELECT COUNT(*) AS total FROM rooms
+2025-06-02 11:11:01 - Database query: SELECT COUNT(*) AS available FROM rooms WHERE status = 'available'
+2025-06-02 11:11:01 - Admin dashboard exited
+2025-06-02 11:11:04 - Admin dashboard accessed by admin
+2025-06-02 11:11:04 - Database query: SELECT COUNT(*) AS total FROM rooms
+2025-06-02 11:11:04 - Database query: SELECT COUNT(*) AS available FROM rooms WHERE status = 'available'
+2025-06-02 11:11:04 - Admin dashboard exited
+2025-06-04 07:17:47 - Admin dashboard accessed by admin
+2025-06-04 07:17:47 - Database query: SELECT COUNT(*) AS total FROM rooms
+2025-06-04 07:17:47 - Database query: SELECT COUNT(*) AS available FROM rooms WHERE status = 'available'
+2025-06-04 07:17:47 - Admin dashboard exited
+2025-06-04 08:48:21 - Admin dashboard accessed by admin
+2025-06-04 08:48:21 - Database query: SELECT COUNT(*) AS total FROM rooms
+2025-06-04 08:48:21 - Database query: SELECT COUNT(*) AS available FROM rooms WHERE status = 'available'
+2025-06-04 08:48:21 - Admin dashboard exited
+2025-06-04 08:58:17 - Admin dashboard accessed by admin
+2025-06-04 08:58:17 - Database query: SELECT COUNT(*) AS total FROM rooms
+2025-06-04 08:58:17 - Database query: SELECT COUNT(*) AS available FROM rooms WHERE status = 'available'
+2025-06-04 08:58:17 - Admin dashboard exited
+2025-06-04 08:58:20 - Admin dashboard accessed by admin
+2025-06-04 08:58:20 - Database query: SELECT COUNT(*) AS total FROM rooms
+2025-06-04 08:58:20 - Database query: SELECT COUNT(*) AS available FROM rooms WHERE status = 'available'
+2025-06-04 08:58:20 - Admin dashboard exited
+2025-06-04 09:01:29 - Admin dashboard accessed by admin
+2025-06-04 09:01:29 - Database query: SELECT COUNT(*) AS total FROM rooms
+2025-06-04 09:01:29 - Database query: SELECT COUNT(*) AS available FROM rooms WHERE status = 'available'
+2025-06-04 09:01:29 - Admin dashboard exited
+2025-06-04 09:09:14 - Admin dashboard accessed by admin
+2025-06-04 09:09:14 - Database query: SELECT COUNT(*) AS total FROM rooms
+2025-06-04 09:09:14 - Database query: SELECT COUNT(*) AS available FROM rooms WHERE status = 'available'
+2025-06-04 09:09:14 - Admin dashboard exited
+2025-06-04 09:23:47 - Admin dashboard accessed by admin
+2025-06-04 09:23:47 - Database query: SELECT COUNT(*) AS total FROM rooms
+2025-06-04 09:23:47 - Database query: SELECT COUNT(*) AS available FROM rooms WHERE status = 'available'
+2025-06-04 09:23:47 - Admin dashboard exited
+2025-06-04 09:34:59 - Admin dashboard accessed by admin
+2025-06-04 09:34:59 - Database query: SELECT COUNT(*) AS total FROM rooms
+2025-06-04 09:34:59 - Database query: SELECT COUNT(*) AS available FROM rooms WHERE status = 'available'
+2025-06-04 09:34:59 - Admin dashboard exited
+2025-06-04 09:35:08 - Admin dashboard accessed by admin
+2025-06-04 09:35:08 - Database query: SELECT COUNT(*) AS total FROM rooms
+2025-06-04 09:35:08 - Database query: SELECT COUNT(*) AS available FROM rooms WHERE status = 'available'
+2025-06-04 09:35:08 - Admin dashboard exited
+2025-06-04 10:39:43 - Admin dashboard accessed by admin
+2025-06-04 10:39:43 - Database query: SELECT COUNT(*) AS total FROM rooms
+2025-06-04 10:39:43 - Database query: SELECT COUNT(*) AS available FROM rooms WHERE status = 'available'
+2025-06-04 10:39:43 - Admin dashboard exited
+2025-06-04 10:39:47 - Admin dashboard accessed by admin
+2025-06-04 10:39:47 - Database query: SELECT COUNT(*) AS total FROM rooms
+2025-06-04 10:39:47 - Database query: SELECT COUNT(*) AS available FROM rooms WHERE status = 'available'
+2025-06-04 10:39:47 - Admin dashboard exited
+2025-06-06 05:36:52 - Admin dashboard accessed by admin
+2025-06-06 05:36:52 - Database query: SELECT COUNT(*) AS total FROM rooms
+2025-06-06 05:36:52 - Database query: SELECT COUNT(*) AS available FROM rooms WHERE status = 'available'
+2025-06-06 05:36:52 - Admin dashboard exited

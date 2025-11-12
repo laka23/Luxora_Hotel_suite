@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Reset</title>
+    <link href="stylee.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Additional styles for multi-step form */
+       
+        .form-step.active {
+            display: block;
+        }
+        .progress-steps {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 30px;
+            position: relative;
+        }
+        .progress-steps::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: #e0e0e0;
+            z-index: 1;
+        }
+        .step {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background: #e0e0e0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #7f8c8d;
+            font-weight: bold;
+            position: relative;
+            z-index: 2;
+        }
+        .step.active {
+            background: #00ff3c;
+            color: white;
+        }
+        .step.completed {
+            background: #00ff3c;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <section class="login-box">
+
+            <!-- Step 2: Verify Code -->
+            <div class="form-step" id="step-2">
+                <h1 class="login-title">Verify Code</h1>
+                <p class="login-subtitle">Check your email for the reset code</p>
+                
+                <form class="login-form" id="verify-code-form" action="verifycode.php" method="POST">
+                    <input type="hidden" id="verify-email" name="email">
+                    
+                    <div class="form-group">
+                        <label for="code">
+                            <i class="fas fa-key"></i> Reset Code
+                        </label>
+                        <input type="text" id="code" name="otp" class="form-input" placeholder="Enter 6-digit code" required>
+                    </div>
+                    
+                    <button type="submit" class="login-button">
+                        <span>Verify Code</span>
+                        <i class="fas fa-check"></i>
+                    </button>
+                    
+                    <div class="register-link">
+                        Didn't receive code? <a href="#" id="resend-code" name="resend" class="signup-link">Resend</a>
+                    </div>
+                </form>
+            </div>
+
+            </div>
+        </section>
+    </div>
+
+   
+</body>
+</html>

@@ -1,0 +1,81 @@
+/* responsive.css – Mobile-friendly layout for Hotel Prime */
+
+@media (max-width: 1200px) {
+  h2 {
+    font-size: 1.75rem;
+  }
+  .card-body {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .navbar .nav-link {
+    font-size: 0.95rem;
+    padding: 0.5rem 0.7rem;
+  }
+
+  .form-control,
+  .form-select {
+    font-size: 0.95rem;
+  }
+
+  .btn {
+    padding: 0.5rem 1.2rem;
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 768px) {
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .card {
+    margin-bottom: 1.5rem;
+  }
+
+  .form-control,
+  .form-select {
+    font-size: 0.9rem;
+  }
+
+  .btn {
+    font-size: 0.9rem;
+    width: 100%;
+  }
+
+  .navbar-brand {
+    font-size: 1.2rem;
+  }
+
+  footer {
+    font-size: 0.85rem;
+    padding: 1rem 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .form-control,
+  .form-select {
+    padding: 0.5rem 0.75rem;
+  }
+
+  .btn {
+    padding: 0.5rem 1rem;
+  }
+
+  .container,
+  .container-fluid {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .card-body {
+    padding: 1rem;
+  }
+
+  .list-group-item {
+    font-size: 0.95rem;
+  }
+}

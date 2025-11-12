@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href="stylee.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+</head>
+<body>
+    <div class="container">
+        <section class="login-box">
+
+            <h1 class="login-title">Welcome Back</h1>
+            <p class="login-subtitle"></p>
+            
+            <form class="login-form" action="process.php" method="POST">
+                <div class="form-group">
+                    <label for="unm">
+                        <i class="fas fa-user"></i> Email
+                    </label>
+                    <input type="email" id="unm" name="email" class="form-input" placeholder="Enter your Email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="pas">
+                        <i class="fas fa-lock"></i> Password
+                    </label>
+                    <input type="password" name="password" id="pas" class="form-input" placeholder="Enter your password" required>
+                    <a href="resetpassword.html" class="forgot-password">Forgot Password?</a>
+                </div>
+                
+                <button type="submit" class="login-button">
+                    <span>Login</span>
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+                
+                <div class="register-link">
+                    Don't have an account? <a href="sing.html" class="signup-link">Sign Up</a>
+                </div>
+                
+            </form>
+        </section>
+    </div>
+</body>
+</html>
